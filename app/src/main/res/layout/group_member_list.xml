@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/dp10"
+    android:layout_margin="@dimen/dp6"
+    android:elevation="@dimen/dp6"
+    android:outlineSpotShadowColor="@color/black_light">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp6"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/dp60"
+                android:layout_height="@dimen/dp60"
+                android:src="@drawable/user_profile"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp10"
+                android:fontFamily="@font/proximanova_bold"
+                android:textColor="@color/blue"
+                android:text="Musafir Prajapati"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp6"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAdmin"
+                android:layout_width="@dimen/dp70"
+                android:layout_height="@dimen/dp30"
+                android:background="@drawable/button_shape"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/proximanova_regular"
+                android:textSize="@dimen/sp13"
+                android:text="Admin"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRemove"
+                android:layout_width="@dimen/dp70"
+                android:layout_height="@dimen/dp30"
+                android:background="@drawable/button_red_shape"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/dp6"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/proximanova_regular"
+                android:textSize="@dimen/sp13"
+                android:text="Remove"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

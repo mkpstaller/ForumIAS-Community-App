@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:id="@+id/svCreateStorySection">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp55"
+            android:layout_marginBottom="@dimen/dp55"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp280"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp25"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@drawable/border_shape"
+                android:elevation="@dimen/dp6"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanova_bold"
+                    android:gravity="top|left"
+                    android:hint="Enter The title of your story"
+                    android:lines="3"
+                    android:paddingLeft="@dimen/dp6"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/gray_dark" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:gravity="top|left"
+                    android:hint="Describe your story in details. It would help other to understand your better."
+                    android:lines="8"
+                    android:minLines="8"
+                    android:paddingLeft="@dimen/dp6"
+                    android:scrollbars="vertical" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp10"
+                android:background="@drawable/border_shape"
+                android:elevation="@dimen/dp6"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp10"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/dp10">
+
+                        <androidx.appcompat.widget.AppCompatRadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/proximanova_bold"
+                            android:paddingLeft="@dimen/dp10"
+                            android:text="Upload cover image" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp1"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_marginTop="@dimen/dp6"
+                            android:layout_marginRight="@dimen/dp15"
+                            android:background="@color/gray" />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp10"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/dp70"
+                                android:layout_height="@dimen/dp70"
+                                android:src="@drawable/gallary_icon" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/dp10"
+                                android:fontFamily="@font/proximanova_bold"
+                                android:gravity="center_vertical"
+                                android:text="Select and Upload image" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginBottom="@dimen/dp10"
+                        android:background="@color/gray_dark" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp10"
+                        android:layout_marginBottom="@dimen/dp55"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/dp10">
+
+                        <androidx.appcompat.widget.AppCompatRadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/proximanova_bold"
+                            android:paddingLeft="@dimen/dp10"
+                            android:text="Choose a cover image for your story" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp1"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_marginTop="@dimen/dp6"
+                            android:layout_marginRight="@dimen/dp15"
+                            android:background="@color/gray" />
+
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp55"
+                            android:layout_margin="@dimen/dp10"
+                            android:background="@drawable/border_shape"
+                            android:fontFamily="@font/proximanova_regular"
+                            android:hint="Enter a catchy text.(this highlight your story)"
+                            android:lines="2"
+                            android:paddingLeft="@dimen/dp6"
+                            android:paddingRight="@dimen/dp6"
+                            android:textSize="@dimen/sp15" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </RadioGroup>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_marginBottom="@dimen/dp100"
+                android:background="@drawable/button_shape"
+                android:fontFamily="@font/proximanova_regular"
+                android:gravity="center"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp17" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>

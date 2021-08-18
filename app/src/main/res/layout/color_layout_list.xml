@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="@dimen/dp30"
+        android:layout_height="@dimen/dp30"
+        app:cardCornerRadius="@dimen/dp25"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/dp6">
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/rlColorCode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:button="@android:color/transparent"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivSelectColorDone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp3"
+            android:visibility="gone"
+            android:src="@drawable/ic_done"/>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

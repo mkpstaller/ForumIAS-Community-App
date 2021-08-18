@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/llLayout"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dp5"
+        android:padding="@dimen/dp10"
+        android:src="@drawable/ic_close"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginBottom="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp40">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Welcome,"
+                        android:textColor="@color/dark_black"
+                        android:fontFamily="@font/segoe_bold"
+                        android:textSize="@dimen/dp35"
+                        android:id="@+id/tvWelcome"/>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:layout_alignParentStart="true"
+                            android:text="Sign in"
+                            android:textColor="@color/blue"
+                            android:fontFamily="@font/segoe_bold"
+                            android:textSize="@dimen/sp20" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:layout_alignParentStart="true"
+                            android:text=" to continue."
+                            android:textColor="@color/dark_black"
+                            android:fontFamily="@font/segoe_bold"
+                            android:textSize="@dimen/sp20"
+                            android:id="@+id/tvToContinue"/>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp100"
+                    android:orientation="vertical">
+
+                  <!--  <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/editText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="55sp"
+                        android:layout_margin="4dp"
+                        android:ems="10"
+                        android:hint="Comment"
+                        android:inputType="text" >
+                    </androidx.appcompat.widget.AppCompatEditText>
+-->
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeColor="@color/text_input_color"
+                    app:boxStrokeWidth="@dimen/dp1"
+                    app:hintTextColor="@color/gray_dark"
+                    android:textColorHint="@color/gray_dark"
+                    android:hint="@string/hint_email"
+                    android:id="@+id/tilEmailPhone">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editEmailOrMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:textCursorDrawable="@drawable/edit_cursor"
+                        android:fontFamily="@font/segoe_regular"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilPassword"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:hint="@string/hint_password"
+                    android:visibility="visible"
+                    app:boxStrokeColor="@color/text_input_color"
+                    app:boxStrokeWidth="@dimen/dp1"
+                    app:hintTextColor="@color/gray_dark"
+                    android:textColorHint="@color/gray_dark"
+                    app:endIconMode="password_toggle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe_regular"
+                        android:textCursorDrawable="@drawable/edit_cursor"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp25"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvForgotPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/fotgot_password"
+                        android:textColor="@color/dark_black"
+                        android:fontFamily="@font/segoe_regular"
+                        android:textSize="@dimen/sp15" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvLoginWithOtp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:layout_alignParentStart="true"
+                        android:text="@string/otp_login"
+                        android:textColor="@color/dark_black"
+                        android:fontFamily="@font/segoe_regular"
+                        android:textSize="@dimen/sp15" />
+
+                </RelativeLayout>
+
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnLogin"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp60"
+                    android:layout_marginTop="@dimen/dp25"
+                    android:backgroundTint="@color/blue"
+                    android:gravity="center"
+                    android:hint="@string/login"
+                    android:textSize="@dimen/sp18"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp100"
+                    android:gravity="center">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvNewUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:layout_alignParentStart="true"
+                        android:text="I'm a new user,"
+                        android:textColor="@color/dark_black"
+                        android:fontFamily="@font/segoe_regular"
+                        android:textSize="@dimen/sp18" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvNewSignUp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:layout_alignParentStart="true"
+                        android:text=" Sign Up"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/segoe_bold"
+                        android:textSize="@dimen/sp18" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+    </RelativeLayout>
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llTermsCondition"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp35"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="@dimen/dp3"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvByLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="By Logging in, you agree to our"
+            android:textColor="@color/dark_black"
+            android:fontFamily="@font/proximanova_regular"
+            android:textSize="@dimen/sp12" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=" terms and conditions"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/proximanova_regular"
+            android:textSize="@dimen/sp12" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="@dimen/dp15">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/showImage"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:src="@drawable/placeholder_back"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp20"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="@font/segoe_bold"
+        android:textSize="@dimen/sp13"
+        android:text="No internet connection found. Check  \nyour connection or try again."
+        />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp25">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTryAgain"
+            style="@style/TextAppearance.MaterialComponents.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp15"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:background="@drawable/button_shape"
+            android:text="try again."
+            />
+</RelativeLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</com.google.android.material.card.MaterialCardView>

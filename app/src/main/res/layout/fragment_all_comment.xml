@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/codlCommentSection"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.forumias.beta.ui.deta.forumias.comment.fragment.AllCommentFragment">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       tools:context="com.forumias.beta.ui.deta.forumias.comment.fragment.AllCommentFragment">
+   <include layout="@layout/not_comment_info_layout"/>
+   <ProgressBar
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="@dimen/dp30"
+       android:visibility="visible"
+       android:id="@+id/progressBar"/>
+
+      <androidx.appcompat.widget.AppCompatTextView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="@string/nothing_show"
+          android:fontFamily="@font/proximanova_regular"
+          android:textColor="@color/black"
+          android:id="@+id/tvNothingShow"
+          android:visibility="gone"
+          android:gravity="center|center_vertical"/>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+       android:paddingBottom="@dimen/dp100"
+       app:stackFromEnd="true"
+       app:reverseLayout="true"
+       android:id="@+id/rvCommentRecyclerView"/>
+
+   </RelativeLayout>
+ <include layout="@layout/replay_bottom_sheet_layout"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

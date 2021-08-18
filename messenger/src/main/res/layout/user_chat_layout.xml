@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llUserSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:layout_margin="@dimen/dp2">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/dp60"
+                android:layout_height="@dimen/dp60"
+                android:src="@drawable/user_profile"
+                android:layout_margin="@dimen/dp5"/>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/dp15"
+                android:layout_height="@dimen/dp15"
+                android:src="@drawable/ic_online"
+                android:layout_marginLeft="@dimen/dp50"
+                android:layout_marginTop="@dimen/dp50"/>
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:gravity="center_vertical"
+            android:layout_margin="@dimen/dp5"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Musafir Prajapati"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp13"
+                    android:fontFamily="@font/proximanova_bold"
+                    android:id="@+id/tvChatUserName"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15:25 pm"
+                    android:textSize="@dimen/sp12"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/gray_dark"
+                    android:id="@+id/tvChatDateTime"/>
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello India how are you?????"
+                android:paddingRight="@dimen/dp5"
+                android:fontFamily="@font/proximanova_regular"
+                android:layout_marginTop="@dimen/dp10"
+                android:textSize="@dimen/sp13"
+                android:textColor="@color/gray_dark"
+                android:id="@+id/tvShowCurrentChat"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:layout_marginLeft="80dp"
+        android:background="@color/gray" />
+</androidx.appcompat.widget.LinearLayoutCompat>

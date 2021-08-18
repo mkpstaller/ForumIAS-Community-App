@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dp35"
+    android:gravity="center"
+    android:id="@+id/llPageFollowAndFollowingSection"
+    android:orientation="horizontal">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llFollow"
+            android:layout_width="@dimen/dp90"
+            android:layout_height="@dimen/dp30"
+            android:background="@drawable/followrs_shae"
+            android:paddingRight="@dimen/dp7"
+            android:visibility="visible"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/dp13"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_add_white"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvFollow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp30"
+                    android:text="@string/follow"
+                    android:fontFamily="@font/segoe_regular"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:visibility="visible"
+                    android:textSize="@dimen/sp11" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llFollowing"
+            android:layout_width="@dimen/dp90"
+            android:layout_height="@dimen/dp30"
+            android:background="@drawable/following_shape"
+            android:paddingRight="@dimen/dp7"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/dp18"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/dp6"
+                    android:src="@drawable/ic_check_blue"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvFollowing"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp30"
+            android:text="@string/following"
+            android:visibility="visible"
+            android:paddingRight="@dimen/dp5"
+            android:paddingLeft="@dimen/dp5"
+            android:fontFamily="@font/segoe_regular"
+            android:layout_gravity="center"
+            android:textColor="@color/blue"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/sp11" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

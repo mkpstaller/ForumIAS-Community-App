@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp55"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/fromSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp6"
+                android:layout_marginTop="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivUserImage"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp50"
+                    android:src="@drawable/user_profile"/>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvFromMessage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/you_shape"
+                        android:padding="@dimen/dp10"
+                        android:fontFamily="@font/segoe_regular"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:text="hello how are you?"
+                        android:textSize="@dimen/ds13" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvFromDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp3"
+                        android:fontFamily="@font/segoe_regular"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/sp12"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:text=" 1 days ago"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/toSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvToMessage"
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:layout_marginRight="@dimen/dp15"
+                    android:background="@drawable/i_shape"
+                    android:padding="@dimen/dp10"
+                    android:fontFamily="@font/segoe_regular"
+                    android:text="Hello i am fine, and you.??"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ds13" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvToDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp3"
+                    android:fontFamily="@font/segoe_regular"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/sp12"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="@dimen/dp15"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:text=" 1 days ago"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

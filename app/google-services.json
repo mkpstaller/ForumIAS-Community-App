@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "82827388566",
+    "firebase_url": "https://forumias-ebf07.firebaseio.com",
+    "project_id": "forumias-ebf07",
+    "storage_bucket": "forumias-ebf07.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:82827388566:android:d05319e6b6995d46efc4b7",
+        "android_client_info": {
+          "package_name": "com.forumias.beta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "82827388566-kqeuld0da9qjv32oh7lp3ul469fu8kmt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.forumias.beta",
+            "certificate_hash": "9ac9de402a0817e30e9ea0c434afcdde4cf2fb5c"
+          }
+        },
+        {
+          "client_id": "82827388566-2tc3u2ap2pjmc460c8jakku9i1f4kqjq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfR_240_Z_iPTVd6BT7j8cKrh4z6YQ66c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "82827388566-2tc3u2ap2pjmc460c8jakku9i1f4kqjq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/dp10"
+    android:layout_margin="@dimen/dp10"
+    android:background="@color/white"
+    android:layout_gravity="center"
+    app:cardElevation="@dimen/dp6">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="@dimen/dp390"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/dp6"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp6"
+                android:src="@drawable/ic_close"
+                android:layout_alignParentRight="true"/>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp100"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivUserImage"
+                android:layout_width="@dimen/dp100"
+                android:layout_height="@dimen/dp100"
+                android:src="@drawable/user_placeholder"
+                android:padding="@dimen/dp10"
+                android:layout_gravity="start"/>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:fontFamily="@font/proximanova_bold"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:textSize="@dimen/sp15"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAbout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:paddingRight="@dimen/dp6"
+                    android:paddingLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp3"
+                    android:visibility="visible"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:textSize="@dimen/sp13"
+                    android:textColor="@color/gray_dark"
+                    android:gravity="center" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/sp12"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:gravity="center" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvFollowers"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp45"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:fontFamily="@font/proximanova_bold"
+                android:layout_marginTop="@dimen/dp0"
+                android:text="0 followers"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp7"
+                android:layout_marginBottom="@dimen/dp6"
+                android:background="@color/gray_dark"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPost"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp45"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/dp0"
+                android:gravity="center"
+                android:fontFamily="@font/proximanova_bold"
+                android:text="0  Posts"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp7"
+                android:layout_marginBottom="@dimen/dp6"
+                android:background="@color/gray_dark"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvComments"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:fontFamily="@font/proximanova_bold"
+                android:layout_marginTop="@dimen/dp0"
+                android:layout_height="@dimen/dp45"
+                android:text="0 Comments"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_public"
+        android:title="Public Channels" />
+
+    <item
+        android:id="@+id/menu_private"
+        android:title="Private Channels" />
+
+    <item
+        android:id="@+id/menu_subscribed"
+        android:title="Subscribed Channels" />
+
+    <item
+        android:id="@+id/menu_myChanel"
+        android:title="My Channels" />
+</menu>

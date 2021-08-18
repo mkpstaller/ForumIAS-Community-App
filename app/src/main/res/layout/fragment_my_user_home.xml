@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/flUserListSection"
+    tools:context="com.forumias.beta.ui.deta.forumias.user.MyUserHomeFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvFollowText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/sp10"
+        android:fontFamily="@font/proximanova_bold"
+        android:textSize="@dimen/sp20"
+        android:textColor="@color/gray_dark"
+        android:text="@string/follow_user"/>
+        <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvFollowHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        android:fontFamily="@font/proximanova_regular"
+        android:textSize="@dimen/sp13"
+        android:textColor="@color/gray_dark"
+        android:text="@string/friendinfo"/>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/grediant_color"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp6"
+        app:tabIndicatorColor="@color/gray_dark"
+        app:tabSelectedTextColor="@color/blue"
+        android:elevation="@dimen/dp6"
+        app:tabTextColor="@color/gray_dark"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance"/>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp5"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</FrameLayout>

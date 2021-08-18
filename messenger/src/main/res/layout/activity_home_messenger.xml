@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_white"
+    android:orientation="vertical"
+    tools:context=".ui.HomeMessengerActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp55"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp8"
+            android:src="@drawable/user_profile" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp60"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proximanova_bold"
+                android:text="Musafir"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proximanova_regular"
+                android:text="Hellow world , How's everyone"
+                android:textColor="@color/gray_dark" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/dp35"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp6"
+            android:src="@drawable/ic_more_menu" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp6"
+        android:layout_marginRight="@dimen/dp10"
+        android:background="@drawable/search_shape"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="@dimen/dp10"
+        android:elevation="@dimen/dp6"
+        android:fontFamily="@font/proximanova_regular"
+        android:hint="@string/search"
+        android:outlineSpotShadowColor="@color/blue"
+        android:paddingLeft="@dimen/dp10"
+        android:textSize="@dimen/sp13" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/grediant_color"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        app:tabIndicatorColor="@color/gray_dark"
+        app:tabSelectedTextColor="@color/blue"
+        android:elevation="@dimen/dp6"
+        app:tabTextColor="@color/gray_dark"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp5"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

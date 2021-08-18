@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/selected_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/menu_user"
+        android:icon="@drawable/selected_search"
+        android:title="Users" />
+
+    <item
+        android:id="@+id/menu_create"
+        android:icon="@drawable/selected_add"
+        android:title="Create" />
+    <item
+        android:id="@+id/menu_pages"
+        android:icon="@drawable/selected_notification"
+        android:title="Pages" />
+    <item
+        android:id="@+id/menu_note"
+        android:icon="@drawable/selected_page"
+        android:title="Create" />
+
+
+    <!--<item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/ic_home"
+        tools:ignore="MenuTitle" />
+    <item
+        android:id="@+id/menu_user"
+        tools:ignore="MenuTitle"
+        android:icon="@drawable/ic_search"/>
+
+
+    <item
+        android:id="@+id/menu_channel"
+        tools:ignore="MenuTitle"
+        android:icon="@drawable/ic_add_box"/>
+    <item
+        android:id="@+id/menu_notification"
+        tools:ignore="MenuTitle"
+        android:icon="@drawable/ic_notifications"/>
+    <item
+        android:id="@+id/menu_pages"
+        tools:ignore="MenuTitle"
+        android:icon="@drawable/ic_note"/>-->
+</menu>

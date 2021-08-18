@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llMyChannelSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp6"
+        android:paddingBottom="@dimen/dp6"
+        android:visibility="gone"
+        android:weightSum="2">
+
+        <!-- <include layout="@layout/channel_image_view"/>-->
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNameMy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="dfajdskj fadsjfkdjklfa"
+            android:fontFamily="@font/segoe_bold"
+            android:textSize="@dimen/sp13"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textColor="@color/black"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="@dimen/dp0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvFollowerCountMy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp4"
+                    android:fontFamily="@font/segoe_bold"
+                    android:gravity="center"
+                    android:text="70"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp13" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/segoe_regular"
+                    android:gravity="center_vertical"
+                    android:text="Subscribers"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/sp12" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/dp20"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPostCountMy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp4"
+                    android:fontFamily="@font/segoe_bold"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp13" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/segoe_regular"
+                    android:gravity="center_vertical"
+                    android:text="Posts"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/sp12" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

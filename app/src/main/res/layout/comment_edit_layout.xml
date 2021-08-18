@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:are="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llCommentEditSection"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp380"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dp5"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:background="@color/gray"
+        android:weightSum="2">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:gravity="center"
+            android:layout_gravity="end"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="@dimen/dp80"
+                android:layout_height="@dimen/dp35"
+                android:background="@drawable/button_shape"
+                android:layout_gravity="end"
+                android:gravity="center"
+                android:textSize="@dimen/sp13"
+                android:textColor="@color/white"
+                android:elevation="@dimen/dp6"
+               android:layout_margin="@dimen/dp3"
+                android:text="Post"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp1"
+            android:layout_marginTop="@dimen/dp6"
+            android:layout_marginBottom="@dimen/dp1">
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chat_edit_shape"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <com.chinalwb.are.AREditor
+                    android:id="@+id/postEditor"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    are:expandMode="FULL"
+                    are:hideToolbar="false"
+                    are:toolbarAlignment="TOP"
+                    android:background="@color/gray_dark"
+                    android:autofillHints="Please type...!"
+                    />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </RelativeLayout>
+        <!--<RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp55"
+            android:layout_weight=".3">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/dp45"
+                android:layout_height="@dimen/dp45"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circle_shape"
+                android:padding="@dimen/dp10"
+                android:src="@drawable/ic_send">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+        </RelativeLayout>-->
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

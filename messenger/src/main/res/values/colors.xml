@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1694F8</color>
+    <color name="colorPrimaryDark">#1694F8</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="blue">#0581E7</color>
+    <color name="light_blue">#DF328BE2</color>
+    <color name="light_blue100">#97328BE2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_white">#F3F1F1</color>
+    <color name="gray">#E2DEDE</color>
+    <color name="low_gray">#CECCCC</color>
+    <color name="gray_dark">#6D6C6C</color>
+    <color name="black">#1A1A1A</color>
+    <color name="black_light">#2B2A2A</color>
+    <color name="green">#059B0B</color>
+    <color name="low_green">#B8FDBC</color>
+    <color name="red">#FF1909</color>
+    <color name="yello">#FF9800</color>
+    <color name="normal_blue">#EE2196F3</color>
+    <color name="dark_blue">#FA1E90EB</color>
+    <color name="low_blue">#0D026CC4</color>
+
+    <color name="c1_green">#2ecc71</color>
+    <color name="c2_blue">#3498db</color>
+    <color name="c3_yellow">#f1c40f</color>
+    <color name="c4_red">#e74c3c</color>
+    <color name="c5_dark_yellow">#fd7e14</color>
+    <color name="c6_parpal">#6610f2</color>
+    <color name="c7_normal_black">#343a40</color>
+</resources>

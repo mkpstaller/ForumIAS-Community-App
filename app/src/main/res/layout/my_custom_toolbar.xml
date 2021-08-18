@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:gravity="center_vertical">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivBackClose"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp5"
+            android:src="@drawable/ic_back_key"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLabel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:paddingRight="@dimen/dp50"
+            android:fontFamily="@font/proximanova_bold"
+            android:text="Exam Strategy"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

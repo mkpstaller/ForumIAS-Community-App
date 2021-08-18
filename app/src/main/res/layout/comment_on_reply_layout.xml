@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp3"
+        android:layout_marginLeft="@dimen/dp15"
+        android:paddingLeft="@dimen/dp3"
+        android:paddingTop="@dimen/dp3"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivReplyUserImage"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp25"
+                android:src="@drawable/user_profile"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvReplyUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Musafir"
+                android:fontFamily="@font/proximanova_bold"
+                android:paddingLeft="@dimen/dp10"
+                android:textSize="@dimen/sp12"
+                android:textColor="@color/gray_dark"
+                android:gravity="center_vertical"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="2 hours ago"
+                android:fontFamily="@font/proximanova_regular"
+                android:paddingLeft="@dimen/dp15"
+                android:textColor="@color/gray_dark"
+                android:textSize="@dimen/sp12"
+                android:gravity="center_vertical"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvReplyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/dp6"
+            android:paddingLeft="@dimen/dp6"
+            android:paddingTop="@dimen/dp3"
+            android:textSize="@dimen/sp12"
+            android:fontFamily="@font/proximanova_regular"
+            android:text="Okay, Why was I unable to tag you @Pahadi Panda?"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+
+      <!--  <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp6"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reply"
+                android:layout_marginRight="@dimen/dp10"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp6"
+                android:paddingTop="@dimen/dp2"
+                android:fontFamily="@font/proximanova_regular"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dp2"
+                android:drawablePadding="@dimen/dp6"
+                android:layout_marginBottom="@dimen/dp6"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@drawable/ic_reply"
+                android:background="@drawable/group_shape"/>
+        </RelativeLayout>-->
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

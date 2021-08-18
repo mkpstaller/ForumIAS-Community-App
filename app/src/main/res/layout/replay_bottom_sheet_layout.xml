@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:are="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    app:behavior_hideable="false"
+    android:visibility="gone"
+    app:behavior_peekHeight="@dimen/dp150"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabCommentSend"
+            style="@style/Widget.MaterialComponents.FloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="@dimen/dp10"
+            app:backgroundTint="@color/green"
+            app:fabSize="normal"
+            android:visibility="gone"
+            app:rippleColor="@color/white"
+            app:srcCompat="@drawable/ic_send_comment"
+            app:tint="@color/white" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabCommentButton"
+            style="@style/Widget.MaterialComponents.FloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="@dimen/dp10"
+            app:backgroundTint="@color/blue"
+            app:fabSize="normal"
+            app:rippleColor="@color/white"
+            app:srcCompat="@drawable/ic_comment_white"
+            app:tint="@color/white" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Musafir"
+            android:id="@+id/tvNameOnComment"
+            android:padding="@dimen/dp6"
+            android:background="@drawable/comment_shape"
+            android:fontFamily="@font/proximanova_regular"
+            android:textColor="@color/white"/>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp80"
+            android:orientation="vertical">
+            <com.chinalwb.are.AREditor
+                android:id="@+id/postEditor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autofillHints="Please type...!"
+                android:background="@color/gray"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/dp5"
+                are:expandMode="FULL"
+                are:hideToolbar="false"
+                are:toolbarAlignment="TOP" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

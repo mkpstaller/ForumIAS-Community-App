@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp55"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/light_white"
+        android:elevation="@dimen/dp6"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp8"
+            android:src="@drawable/user_profile" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp60"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proximanova_bold"
+                android:text="Musafir"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proximanova_regular"
+                android:text="Hellow world , How's everyone"
+                android:textColor="@color/gray_dark" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/dp35"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp6"
+            android:visibility="gone"
+            android:src="@drawable/ic_more_menu" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp6"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/dp40"
+                android:layout_height="@dimen/dp40"
+                android:src="@drawable/user_profile"/>
+           <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/you_shape"
+                android:padding="@dimen/dp10"
+               android:textColor="@color/black"
+                android:layout_marginTop="@dimen/dp15"
+                android:text="hello how are you?"
+               android:fontFamily="@font/proximanova_regular"
+                android:textSize="@dimen/ds13" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp60"
+            android:layout_marginRight="@dimen/dp15"
+            android:background="@drawable/i_shape"
+            android:padding="@dimen/dp10"
+            android:fontFamily="@font/proximanova_regular"
+            android:text="Hello i am fine, and you.??"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ds13" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/dp5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.7"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_marginBottom="@dimen/dp5">
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chat_edit_shape"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="@dimen/dp260"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp2"
+                    android:layout_marginRight="@dimen/dp15"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:hint="Type a message."
+                    android:inputType="textMultiLine"
+                    android:lines="7"
+                    android:textSize="@dimen/sp13"
+                    android:maxLines="7"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:minLines="2"
+                    android:padding="@dimen/dp3"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingRight="@dimen/dp25"
+                    android:scrollbars="vertical" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp40"
+                    android:padding="@dimen/dp4"
+                    android:layout_marginRight="@dimen/dp6"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_attach"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp55"
+                android:layout_weight=".3">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/dp45"
+                    android:layout_height="@dimen/dp45"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circle_shape"
+                    android:padding="@dimen/dp10"
+                    android:src="@drawable/ic_send">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

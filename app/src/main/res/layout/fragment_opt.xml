@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/llLayout"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dp5"
+        android:padding="@dimen/dp10"
+        android:visibility="visible"
+        android:src="@drawable/ic_close"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp30"
+        android:layout_marginBottom="@dimen/dp20">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvUserInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Please enter your register
+                        mobile number or email to receive the OTP"
+                        android:textColor="@color/dark_black"
+                        android:fontFamily="@font/segoe_bold"
+                        android:visibility="visible"
+                        android:textSize="@dimen/sp25" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp70"
+                    android:orientation="vertical">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:hint="@string/hint_email"
+                        app:hintTextColor="@color/gray_dark"
+                        android:textColorHint="@color/gray_dark"
+                        app:boxStrokeColor="@color/gray_dark"
+                        app:boxStrokeWidth="@dimen/dp1"
+                        android:id="@+id/tiLEmailOrNumberSection">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editEmailOrMobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/segoe_regular"
+                            android:textCursorDrawable="@drawable/edit_cursor"
+                            android:inputType="text" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+              <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="OTP"
+                        app:counterEnabled="true"
+                        android:visibility="gone"
+                        app:counterMaxLength="6"
+                        app:boxStrokeColor="@color/gray_dark"
+                        app:boxStrokeWidth="@dimen/dp1"
+                        app:hintTextColor="@color/gray_dark"
+                        android:textColorHint="@color/gray_dark"
+                        android:id="@+id/tiLOtpSection">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editOtp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:lines="1"
+                            android:fontFamily="@font/segoe_regular"
+                            android:maxLength="6"
+                            android:minLines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+                    <com.chaos.view.PinView
+                        android:id="@+id/otpText"
+                        style="@style/PinWidget.PinView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:cursorVisible="true"
+                        android:inputType="number"
+                        android:visibility="gone"
+                        android:itemBackground="#65EAEAEA"
+                        app:cursorColor="@color/black"
+                        app:hideLineWhenFilled="true"
+                        app:itemCount="6"
+                        app:itemHeight="50dp"
+                        app:itemRadius="5dp"
+                        app:itemWidth="50dp"
+                        app:lineColor="@color/colorAccent"
+                        app:lineWidth="1dp" />
+
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvReSendOtp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Click here to resend the OTP"
+                        android:textColor="@color/dark_black"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/dp20"
+                        android:fontFamily="@font/segoe_regular"
+                        android:visibility="gone"
+                        android:textSize="@dimen/sp18" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnLoginWithOtp"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp60"
+                        android:layout_marginTop="@dimen/dp100"
+                        android:backgroundTint="@color/blue"
+                        android:gravity="center"
+                        android:hint="@string/text_otp"
+                        android:textSize="@dimen/sp18"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp140"
+                    android:gravity="center">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvNewUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:layout_alignParentStart="true"
+                        android:text="I'm a new user,"
+                        android:textColor="@color/dark_black"
+                        android:fontFamily="@font/segoe_regular"
+                        android:textSize="@dimen/sp18" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvNewSignUp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:layout_alignParentStart="true"
+                        android:text=" Sign Up"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/segoe_bold"
+                        android:textSize="@dimen/sp18" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

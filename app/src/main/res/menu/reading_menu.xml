@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Read"
+        android:id="@+id/menu_read"/>
+    <item android:id="@+id/menu_unread"
+        android:title="Unread"/>
+    <item android:id="@+id/menu_starred"
+        android:title="Starred"/>
+    <item android:id="@+id/menu_unstarred"
+        android:title="Unstarred"/>
+    <item android:id="@+id/menu_delete"
+        android:title="@string/delete"/>
+</menu>

@@ -1,0 +1,146 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+      <!--  <item name="colorControlNormal">#F32133</item>
+        <item name="colorControlActivated">#96001C</item>-->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+
+
+
+
+
+
+        <!-- New MaterialComponents attributes. -->
+
+
+        <item name="textAppearanceHeadline1">@style/TextAppearance.MaterialComponents.Headline1
+        </item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.MaterialComponents.Headline2
+        </item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.MaterialComponents.Headline3
+        </item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.MaterialComponents.Headline4
+        </item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.MaterialComponents.Headline5
+        </item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.MaterialComponents.Headline6
+        </item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.MaterialComponents.Subtitle1
+        </item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.MaterialComponents.Subtitle2
+        </item>
+        <item name="textAppearanceBody1">@style/TextAppearance.MaterialComponents.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.MaterialComponents.Body2</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.MaterialComponents.Caption</item>
+        <item name="textAppearanceButton">@style/TextAppearance.MaterialComponents.Button</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.MaterialComponents.Overline</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">@font/segoe_bold</item>
+    </style>
+    <style name="MyNewTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    <style name="Tooltip2">
+        <item name="android:text">qwqwrqwfqwfqwfqwfqwf</item>
+        <item name="android:textColor">?android:textColorPrimaryInverse</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:lineSpacingExtra">5dp</item>
+        <item name="backgroundColor">@color/colorPrimary</item>
+        <item name="cornerRadius">10dp</item>
+    </style>
+    <style name="Tooltip">
+        <item name="android:text">TESSSSSS</item>
+        <item name="android:textSize">16sp</item>
+        <item name="backgroundColor">@color/colorAccent</item>
+        <item name="cornerRadius">10dp</item>
+    </style>
+
+
+
+    <style name="FullScreenDialogStyle" parent="Theme.AppCompat.Dialog">
+        <!--<item name="android:windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        &lt;!&ndash; Set this to true if you want Full Screen without status bar &ndash;&gt;
+        <item name="android:windowFullscreen">false</item>
+
+        <item name="android:windowIsFloating">false</item>
+-->
+        <!-- This is important! Don't forget to set window background -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+        <!-- Additionally if you want animations when dialog opening -->
+       <item name="android:windowEnterAnimation">@anim/push_down_out</item>
+        <item name="android:windowExitAnimation">@anim/push_down_in</item>
+    </style>
+
+    <style name="createPostDialog"  parent="Theme.AppCompat.Dialog">
+       <item name="android:windowNoTitle">true</item>
+       <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+       <item name="colorPrimary">@color/colorPrimary</item>
+
+      <item name="android:windowFullscreen">false</item>
+
+       <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- This is important! Don't forget to set window background -->
+
+
+        <!-- Additionally if you want animations when dialog opening -->
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="SwitchTheme" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlActivated">@color/green</item>
+    </style>
+
+    <style name="myThem" parent="Theme.MaterialComponents.Light.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="ThemeOverlay.SearchView" parent="Theme.MaterialComponents.Light">
+        <!-- Text color -->
+        <item name="android:editTextColor">@color/blue</item>
+        <!-- Hint text color -->
+        <item name="android:textColorHint">@color/gray_dark</item>
+    </style>
+
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/red</item>
+        <item name="boxStrokeWidth">1dp</item>
+    </style>
+
+</resources>

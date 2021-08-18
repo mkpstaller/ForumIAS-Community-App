@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp3"
+    android:layout_marginBottom="@dimen/dp3"
+    android:background="@color/white"
+    android:id="@+id/llSearchList">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llPostSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSearchPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp15"
+            android:paddingRight="@dimen/dp15"
+            android:paddingTop="@dimen/dp13"
+            android:paddingBottom="@dimen/dp12"
+            android:textColor="@color/black"
+            android:fontFamily="@font/segoe_bold"
+            android:textSize="@dimen/sp14"
+            android:text="The Journey of a thousand miles begins with the first step"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llUserSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp15"
+            android:paddingRight="@dimen/dp15"
+            android:paddingTop="@dimen/dp13"
+            android:visibility="visible"
+            android:paddingBottom="@dimen/dp12"
+            android:orientation="horizontal">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/dp40"
+                android:layout_height="@dimen/dp40"
+                android:id="@+id/ivUserImage"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvUserName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/dp15"
+                android:paddingRight="@dimen/dp15"
+                android:paddingTop="@dimen/dp13"
+                android:paddingBottom="@dimen/dp12"
+                android:textColor="@color/black"
+                android:fontFamily="@font/segoe_bold"
+                android:textSize="@dimen/sp14"
+                android:text="Musafir"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+   <!-- <color name="colorPrimary">#DAD8D8</color>
+    <color name="colorPrimaryDark">#DAD8D8</color>-->
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#007bff</color>
+
+
+
+    <color name="blue">#0269BD</color>
+    <color name="text_blue">#007bff</color>
+    <color name="light_blue">#DF328BE2</color>
+    <color name="light_blue100">#97328BE2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_white">#F3F1F1</color>
+    <color name="gray">#E2DEDE</color>
+    <color name="low_gray">#CECCCC</color>
+    <color name="gray_dark">#6D6C6C</color>
+    <color name="gray_dark_second">#999</color>
+    <color name="black">#1A1A1A</color>
+    <color name="black_light">#2B2A2A</color>
+    <color name="green">#059B0B</color>
+    <color name="low_green">#B8FDBC</color>
+    <color name="red">#FF1909</color>
+    <color name="yello">#FF9800</color>
+    <color name="normal_blue">#EE2196F3</color>
+    <color name="dark_blue">#FA1E90EB</color>
+    <color name="low_blue">#0D026CC4</color>
+    <color name="back_color">#EBF2F5</color>
+
+    <color name="c1_green">#2ecc71</color>
+    <color name="c2_blue">#3498db</color>
+    <color name="c3_yellow">#f1c40f</color>
+    <color name="c4_red">#e74c3c</color>
+    <color name="c5_dark_yellow">#fd7e14</color>
+    <color name="c6_parpal">#6610f2</color>
+    <color name="c7_normal_black">#343a40</color>
+    <color name="dark_black">#000000</color>
+    <color name="splash_blue">#005BAE</color>
+    <color name="transparent_blue">#57438AB6</color>
+    <color name="notification_blue">#32438AB6</color>
+
+    <color name="darkmode_back_color">#1F1E1E</color>
+    <color name="darkmode_back_adapter_color">#222121</color>
+    <color name="border_color">#444444</color>
+    <color name="low_black">#2B2A2A</color>
+    <color name="heart_red">#BD1E35</color>
+    <color name="transparent_black">#9A000000</color>
+    <color name="icon_color">#919090</color>
+    <color name="light_yellow">#F3D680</color>
+
+ <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">@color/gray</color>
+</resources>

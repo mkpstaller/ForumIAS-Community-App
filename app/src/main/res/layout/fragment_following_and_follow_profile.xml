@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.forumias.beta.ui.deta.forumias.profile.follow_following.FollowingAndFollowProfileFragment">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorHeight="@dimen/dp2"
+        app:tabMaxWidth="0dp"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/gray_dark"
+        app:tabTextAppearance="@style/MyNewTabLayoutTextAppearance"
+        app:tabTextColor="@color/gray_dark"
+        app:tabSelectedTextColor="@color/black"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp53"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+</FrameLayout>

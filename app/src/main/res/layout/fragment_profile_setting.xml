@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.forumias.beta.ui.deta.forumias.profile.ProfileSettingFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvProfileTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:fontFamily="@font/segoe_bold"
+                android:textSize="@dimen/dp17"
+                android:paddingLeft="@dimen/dp3"
+                android:layout_marginTop="@dimen/dp6"
+                android:textColor="@color/black"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:layout_marginLeft="@dimen/dp3"
+                android:background="@color/low_gray"
+                android:layout_marginTop="@dimen/dp3"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp6"
+                android:fontFamily="@font/segoe_regular"
+                android:text="User Name"
+                android:textColor="@color/black" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvShowUserName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:text=""
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp5"
+                android:textColor="@color/gray"
+                android:background="@drawable/post_border"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp3"
+                android:fontFamily="@font/segoe_regular"
+                android:text="You cannot change your username on community. Please go to Forumias One Acccount one.forumias.com."
+                android:textColor="@color/gray_dark"
+                android:paddingTop="@dimen/dp6"
+                android:paddingBottom="@dimen/dp6"
+                android:textSize="@dimen/sp12" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSignature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp6"
+                android:fontFamily="@font/segoe_regular"
+                android:text="Signature (Max 50 Characters)"
+                android:textColor="@color/black" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/gray_dark"
+                app:boxStrokeWidth="@dimen/dp1"
+                app:hintTextColor="@color/gray_dark"
+                android:textColorHint="@color/gray_dark"
+                android:hint="">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editSignature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp6"
+                android:fontFamily="@font/segoe_regular"
+                android:text="Email address"
+                android:textColor="@color/black" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvEmailUserName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:text=""
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp5"
+                android:textColor="@color/black_light"
+                android:background="@drawable/post_border"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoe_regular"
+                android:paddingBottom="@dimen/dp6"
+                android:paddingTop="@dimen/dp6"
+                android:text="If you wish to change your email address, Please go to Forumias One Acccount one.forumias.com."
+                android:textColor="@color/gray_dark"
+                android:textSize="@dimen/sp12" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRealName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp6"
+                android:fontFamily="@font/segoe_regular"
+                android:text="Real Name"
+                android:textColor="@color/black" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/gray_dark"
+                app:boxStrokeWidth="@dimen/dp1"
+                app:hintTextColor="@color/gray_dark"
+                android:textColorHint="@color/gray_dark"
+                android:hint="">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editRealName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:focusable="false"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkboxHideRealName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp6"
+                android:checked="true"
+                android:fontFamily="@font/segoe_bold"
+                android:text="Hide my real name on community"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+                android:fontFamily="@font/segoe_regular"
+                android:text="Uncheck checkbox to display your real name. Other users will be able to see your real name on community."
+                android:textColor="@color/gray_dark"
+                android:textSize="@dimen/sp12" />
+
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/checkboxFollowMe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp6"
+                android:checked="true"
+                android:fontFamily="@font/segoe_bold"
+                android:text="Follow back automatically who follow me"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+                android:fontFamily="@font/segoe_regular"
+                android:text="Uncheck checkbox if you do not want the auto follow back users."
+                android:textColor="@color/gray_dark"
+                android:textSize="@dimen/sp12" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tvUpdateProfile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp55"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginBottom="@dimen/dp10"
+                android:backgroundTint="@color/blue"
+                android:fontFamily="@font/segoe_bold"
+                android:gravity="center"
+                android:text="@string/update"
+                app:cornerRadius="@dimen/dp10"
+                android:textColor="@color/white" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</FrameLayout>

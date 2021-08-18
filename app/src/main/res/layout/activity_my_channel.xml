@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_color"
+    android:id="@+id/codlChannelDetails">
+
+    <include layout="@layout/custom_toolbar_new"/>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp50"
+        android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:id="@+id/collapsToollayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:padding="@dimen/dp10"
+        app:layout_scrollFlags="exitUntilCollapsed|scroll">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp5"
+            android:paddingBottom="@dimen/dp5"
+            android:orientation="horizontal">
+
+         <!--   <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivChannelImage"
+                android:layout_width="@dimen/dp45"
+                android:layout_height="@dimen/dp45"
+                android:src="@drawable/user_placeholder"
+                android:visibility="visible"
+                android:layout_gravity="center"/>
+                <com.forumias.chat.utility.CircularTextView
+                    android:id="@+id/tvChannelFirstText"
+                    android:layout_width="@dimen/dp45"
+                    android:layout_height="@dimen/dp45"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:fontFamily="@font/proximanova_bold"
+                    android:gravity="center"
+                    android:text="T"
+                    android:visibility="visible"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />-->
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvChannelName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/segoe_bold"
+                    android:gravity="start|center"
+                    android:text="My Channel"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+                <WebView
+                    android:id="@+id/webView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/dp6"
+                    android:layout_marginTop="@dimen/dp6"
+                    android:layout_marginBottom="@dimen/dp5"
+                    tools:ignore="WebViewLayout" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvPostCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/segoe_bold"
+                        android:gravity="center"
+                        android:text="0"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp3"
+                        android:textColor="@color/dark_black"
+                        android:textSize="@dimen/sp15" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/segoe_regular"
+                        android:gravity="center"
+                        android:text="Posts"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/sp12" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvSubscriberCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/segoe_bold"
+                        android:gravity="center"
+                        android:text="0"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp3"
+                        android:textColor="@color/dark_black"
+                        android:textSize="@dimen/sp15" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:fontFamily="@font/segoe_regular"
+                        android:gravity="center"
+                        android:text="Subscribers"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/sp12" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dp10"
+                android:orientation="horizontal">
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dp6"
+                    android:gravity="end|center"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/llSubscribed"
+                        android:layout_width="@dimen/dp130"
+                        android:layout_height="@dimen/dp30"
+                        android:background="@drawable/followrs_shae"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/dp18"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_add_white"
+                            android:paddingRight="@dimen/dp3"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvSubscribed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dp30"
+                            android:text="Subscribe"
+                            android:fontFamily="@font/segoe_regular"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical"
+                            android:visibility="visible"
+                            android:textSize="@dimen/sp11"
+                            android:textColor="@color/white" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/llUnSubscribed"
+                        android:layout_width="@dimen/dp130"
+                        android:layout_height="@dimen/dp30"
+                        android:background="@drawable/following_shape"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/dp18"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_check_blue"
+                            android:paddingRight="@dimen/dp3"/>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvUnSubscribed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dp30"
+                            android:text="Subscribed"
+                            android:visibility="visible"
+                            android:fontFamily="@font/segoe_regular"
+                            android:layout_gravity="center"
+                            android:textColor="@color/blue"
+                            android:gravity="center_vertical"
+                            android:textSize="@dimen/sp10" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvCreatePost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp30"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/group_shape"
+                        android:drawableLeft="@drawable/ic_addgroup"
+                        android:fontFamily="@font/proximanova_regular"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dp3"
+                        android:paddingRight="@dimen/dp6"
+                        android:text="Create Post"
+                        android:visibility="gone"
+                        android:layout_marginLeft="@dimen/dp6"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/sp11" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp0"
+            android:background="@color/white"
+            app:layout_collapseMode="pin"
+            android:backgroundTint="@color/white"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark">
+        </com.google.android.material.appbar.MaterialToolbar>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" >
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/progressBar"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            android:layout_margin="@dimen/dp170"
+            android:layout_gravity="center_vertical"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+            android:id="@+id/recyclerView"/>
+    </RelativeLayout>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:animateLayoutChanges="true"
+        app:tabIndicatorColor="@color/blue"
+        app:tabIndicator="@drawable/tab_indicater"
+        app:tabSelectedTextColor="@color/blue"
+        app:tabTextColor="@color/gray_dark"
+        android:background="@color/white"
+        app:tabIndicatorHeight="4dp"
+        app:tabMaxWidth="0dp"
+        app:tabMode="fixed"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp5"
+            android:visibility="visible"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <!--<include layout="@layout/create_my_channel_post_layout"/>-->
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

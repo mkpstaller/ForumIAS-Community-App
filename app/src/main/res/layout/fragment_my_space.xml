@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlMySpaceMain"
+    android:background="@color/back_color">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp20"
+            android:fontFamily="@font/segoe_regular"
+            android:drawablePadding="@dimen/dp15"
+            android:layout_margin="@dimen/dp10"
+            android:textColorHint="@color/blue"
+            android:focusable="true"
+            android:background="@drawable/new_search_edit_shape"/>
+
+        <RelativeLayout
+            android:id="@+id/rlProgress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/avi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/AVLoadingIndicatorView"
+                android:visibility="visible"
+                android:layout_centerInParent="true"
+                app:indicatorName="BallPulseIndicator"
+                app:indicatorColor="@color/blue"
+                />
+        </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNotDataFound"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:fontFamily="@font/proximanova_bold"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:textSize="@dimen/sp18"
+            android:textColor="@color/gray_dark"
+            android:text="No Data Found..!"/>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.ahmadnemati.clickablewebview.ClickableWebView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/adsView"/>
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/webView"
+                tools:ignore="WebViewLayout" />
+
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/webViewImage"
+                tools:ignore="WebViewLayout" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivAdsShowHide"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp25"
+                android:layout_alignBottom="@+id/webView"
+                android:background="@drawable/circle_shape"
+                android:layout_alignParentRight="true"
+                app:layout_anchor="@+id/webView"
+                android:src="@drawable/ic_keyboard_arrow_up"
+                android:padding="@dimen/dp5"
+                android:layout_marginRight="@dimen/dp5"
+                app:layout_anchorGravity="bottom|right|end"
+                tools:ignore="NotSibling"/>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <include layout="@layout/login_info_card"/>
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/swipeRefresh">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mySpaceRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp55"
+            android:layoutAnimation="@anim/layout_animation_up_to_down"
+            android:visibility="visible"
+            android:overScrollMode="never"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/sectionComment"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/dp60"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
+
+      <androidx.appcompat.widget.LinearLayoutCompat
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:background="@color/white"
+          android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/commentEdit"
+            android:layout_width="@dimen/dp300"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:maxLines="4"
+            android:visibility="gone"
+            android:hint="Type Comment...."/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:layout_marginLeft="@dimen/dp10"
+            android:text="Post"/>
+      </androidx.appcompat.widget.LinearLayoutCompat>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/dp8"
+    android:layout_margin="@dimen/dp8"
+    app:cardElevation="@dimen/dp0">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llFriendProfileSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/post_border"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivUserImage"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="@dimen/dp80"
+            android:src="@drawable/user_profile"
+            android:padding="@dimen/dp10"
+            android:layout_gravity="center"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp4"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dfdfasd"
+                android:fontFamily="@font/proximanova_regular"
+                android:gravity="center"
+                android:textSize="@dimen/sp13"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/tvUserVerified"
+                android:layout_width="@dimen/dp16"
+                android:layout_height="@dimen/dp16"
+                android:layout_alignRight="@+id/tvName"
+               android:layout_marginLeft="@dimen/dp6"
+                android:background="@drawable/red_circle_shape"
+                android:padding="@dimen/dp2"
+                android:src="@drawable/ic_check"
+                android:visibility="visible" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:paddingRight="@dimen/dp5"
+            android:paddingLeft="@dimen/dp5"
+            android:visibility="gone"
+            android:fontFamily="@font/proximanova_regular"
+            android:textSize="@dimen/sp11"
+            android:gravity="center" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/join_on"
+            android:fontFamily="@font/proximanova_regular"
+            android:gravity="center"
+            android:textSize="@dimen/sp12"
+            android:padding="@dimen/dp5"
+            android:textColor="@color/gray_dark"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/sp12"
+            android:layout_marginTop="@dimen/dp4"
+            android:fontFamily="@font/proximanova_regular"
+            android:gravity="center" />
+            <include layout="@layout/user_follow_follwing"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</com.google.android.material.card.MaterialCardView>

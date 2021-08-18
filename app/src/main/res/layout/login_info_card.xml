@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp6"
+    android:elevation="@dimen/dp6"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:outlineSpotShadowColor="@color/blue"
+    android:id="@+id/loginInfoSection"
+    app:strokeColor="@color/blue"
+    app:strokeWidth="@dimen/dp1"
+    app:cardCornerRadius="@dimen/dp6">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp6"
+        android:background="#B9D1E6"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/proximanova_bold"
+            android:gravity="center"
+            android:text="Welcome to ForumIAS(Beta),"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp18" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:fontFamily="@font/proximanova_regular"
+            android:gravity="center"
+            android:text="this Civil Service Preparation Community"
+            android:textSize="@dimen/sp18" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:fontFamily="@font/proximanova_regular"
+            android:gravity="center"
+            android:text="The no-nonsense moderated community for Civil Services preparation. Ask a question, start a discussion or share your knowledge, and connect with the best minds preparing for the IAS."
+            android:textSize="@dimen/sp13" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLoginNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_now"
+            android:background="@drawable/button_shape"
+            android:textSize="@dimen/sp12"
+            android:textColor="@color/white"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10"
+            android:paddingBottom="@dimen/dp5"
+            android:fontFamily="@font/proximanova_regular"
+            android:layout_marginBottom="@dimen/dp5"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp10"
+            android:paddingTop="@dimen/dp5"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</com.google.android.material.card.MaterialCardView>

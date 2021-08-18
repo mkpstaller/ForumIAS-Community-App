@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:are="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_color"
+    android:orientation="vertical"
+    android:id="@+id/rlCreatePostSection"
+    tools:context="com.forumias.beta.com.forumias.beta.ui.deta.forumias.create_story.CreateStoryOrQuestionActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp55"
+            android:layout_marginTop="@dimen/dp10"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp55"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="@dimen/dp40"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/dp8"
+                    android:visibility="visible"
+                    android:src="@drawable/ic_back_key" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivUserImage"
+                    android:layout_width="@dimen/dp40"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:src="@drawable/user_profile" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:fontFamily="@font/segoe_bold"
+                    android:gravity="center"
+                    android:text="Musafir"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp15" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoe_bold"
+                    android:textSize="@dimen/dp20"
+                    android:paddingLeft="@dimen/dp16"
+                    android:paddingBottom="@dimen/dp15"
+                    android:text="@string/create_story"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:textColor="@color/dark_black" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dp7"
+                    android:paddingTop="@dimen/dp7"
+                    android:visibility="visible">
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/radioQuestion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp8"
+                        android:fontFamily="@font/proximanova_regular"
+                        android:text="@string/ask_question"
+                        android:textColor="@color/black"
+                        android:checked="true"
+                        android:paddingLeft="@dimen/dp6"
+                        android:textSize="@dimen/sp12" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/dp20"
+                        android:paddingLeft="@dimen/dp20"
+                        android:fontFamily="@font/segoe_bold"
+                        android:textColor="@color/gray_dark"
+                        android:text="OR"/>
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/radioDiscussion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:paddingLeft="@dimen/dp6"
+                        android:fontFamily="@font/proximanova_regular"
+                        android:text="@string/start_discustion"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp12" />
+                </RadioGroup>
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/editTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:fontFamily="@font/segoe_regular"
+                    android:gravity="top|start"
+                    android:hint="@string/story_hint"
+                    android:lines="2"
+                    android:minLines="3"
+                    android:paddingLeft="@dimen/dp15"
+                    android:paddingRight="@dimen/dp15"
+                    android:paddingTop="@dimen/dp7"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/gray_dark"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/sp14" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/editDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp2"
+                    android:background="@color/white"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:gravity="start|top"
+                    android:hint="Describe your story in detail. It would help others to understand you better"
+                    android:lines="15"
+                    android:padding="@dimen/dp6"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/sp13"
+                    android:visibility="gone" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPostDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Describe your story in detail. It would help others to understand you better"
+                    android:textColor="@color/dark_black"
+                    app:fontFamily="@font/segoe_regular"
+                    android:paddingRight="@dimen/dp15"
+                    android:paddingLeft="@dimen/dp15"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:paddingBottom="@dimen/dp5"
+                    android:textSize="@dimen/sp14"/>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/llEditorSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:background="@color/white">
+                    <com.chinalwb.are.AREditor
+                        android:id="@+id/postEditor"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp400"
+                        android:autofillHints="Please type...!"
+                        android:visibility="visible"
+                        are:expandMode="FULL"
+                        are:hideToolbar="false"
+                        are:toolbarAlignment="TOP" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/imageSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvCamera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp50"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:drawableLeft="@drawable/ic_camera"
+                        android:drawablePadding="@dimen/dp6"
+                        android:gravity="center"
+                        android:text="@string/camera"
+                        android:textColor="@color/dark_black"
+                        android:textSize="@dimen/sp13" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvGallery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp50"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:drawableLeft="@drawable/ic_gallery"
+                        android:drawablePadding="@dimen/dp6"
+                        android:gravity="center"
+                        android:text="@string/gallery"
+                        android:textColor="@color/dark_black"
+                        android:textSize="@dimen/sp13" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvFile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp50"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:drawableLeft="@drawable/ic_file"
+                        android:drawablePadding="@dimen/dp6"
+                        android:gravity="center"
+                        android:text="@string/file"
+                        android:textColor="@color/dark_black"
+                        android:textSize="@dimen/sp13" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/checkCover"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:paddingLeft="@dimen/dp5"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:visibility="gone"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:text="Add a background/cover image to your post"
+                    android:textColor="@color/black" />
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/llBackCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp15"
+                    android:background="@drawable/border_shape"
+                    android:elevation="@dimen/dp0"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp10"
+                    android:visibility="gone">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.AppCompatRadioButton
+                            android:id="@+id/radioImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/gray_dark"
+                            android:fontFamily="@font/segoe_regular"
+                            android:paddingLeft="@dimen/dp10"
+                            android:text="Upload cover image"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp13" />
+
+                        <View
+                            android:id="@+id/viewOne"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp1"
+                            android:layout_marginLeft="@dimen/dp15"
+                            android:layout_marginTop="@dimen/dp6"
+                            android:visibility="gone"
+                            android:layout_marginRight="@dimen/dp15"
+                            android:background="@color/gray" />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/llSelectImageSection"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp10"
+                            android:layout_marginLeft="@dimen/dp6"
+                            android:visibility="gone"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/dp30"
+                                android:layout_height="@dimen/dp30"
+                                android:src="@drawable/gallary_icon" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/dp10"
+                                android:fontFamily="@font/proximanova_bold"
+                                android:gravity="center_vertical"
+                                android:text="Select and Upload image"
+                                android:textColor="@color/gray_dark" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/dp6"
+                            android:background="@color/low_gray" />
+
+                        <androidx.appcompat.widget.AppCompatRadioButton
+                            android:id="@+id/radioColor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/gray_dark"
+                            android:checked="true"
+                            android:layout_marginTop="@dimen/dp7"
+                            android:fontFamily="@font/segoe_regular"
+                            android:paddingLeft="@dimen/dp10"
+                            android:text="Choose background color"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp13" />
+
+                        <View
+                            android:id="@+id/viewColor"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp1"
+                            android:layout_marginLeft="@dimen/dp15"
+                            android:layout_marginRight="@dimen/dp15"
+                            android:background="@color/gray" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/colorRecyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp25"
+                            android:layout_marginRight="@dimen/dp20"
+                            android:layout_marginBottom="@dimen/dp7"
+                            android:orientation="horizontal"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                    </RadioGroup>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPost"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp45"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/dp30"
+                    android:layout_marginLeft="@dimen/dp30"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:background="@drawable/followrs_shae"
+                    android:gravity="center"
+                    android:fontFamily="@font/segoe_bold"
+                    android:textSize="@dimen/sp18"
+                    android:textColor="@color/light_white"
+                    android:text="Publish" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</RelativeLayout>

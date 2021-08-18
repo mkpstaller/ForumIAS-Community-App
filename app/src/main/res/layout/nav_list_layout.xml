@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp50"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/rlFollowingSection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/dp6"
+        android:paddingBottom="@dimen/dp6"
+        android:paddingLeft="@dimen/dp10"
+        android:background="@drawable/custom_ripple"
+        android:gravity="center_vertical">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_marginLeft="@dimen/dp6"
+            android:elevation="@dimen/dp3"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp4"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSideNavName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segoe_regular"
+            android:padding="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp6"
+            android:text="Groups Following"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp13" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/swDarkMode"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/sp15"
+        android:theme="@style/SwitchTheme"
+        android:visibility="gone"
+        android:gravity="center"/>
+</RelativeLayout>

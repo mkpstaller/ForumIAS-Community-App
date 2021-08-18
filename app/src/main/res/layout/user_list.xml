@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp60"
+        android:gravity="center_vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llUserSection"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/dp10"
+        android:gravity="center_vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivUserImage"
+                android:layout_width="@dimen/dp35"
+                android:layout_height="@dimen/dp35"
+                android:src="@drawable/user_profile"
+                android:paddingLeft="@dimen/dp5"
+                android:layout_margin="@dimen/dp1"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Musafir Prajapati"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/segoe_bold"
+                    android:textSize="@dimen/sp12"
+                    android:layout_marginLeft="@dimen/dp7"
+                    android:id="@+id/tvUserName"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivUserVerified"
+            android:layout_width="@dimen/dp12"
+            android:layout_height="@dimen/dp12"
+            android:layout_alignRight="@+id/tvName"
+            android:background="@drawable/red_circle_shape"
+            android:padding="@dimen/dp2"
+            android:layout_marginLeft="@dimen/dp4"
+            android:layout_marginTop="@dimen/dp1"
+            android:src="@drawable/ic_check"
+            android:visibility="visible" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvFollowers"
+            android:layout_width="@dimen/dp70"
+            android:layout_height="@dimen/dp30"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp5"
+            android:fontFamily="@font/segoe_regular"
+            android:textSize="@dimen/sp12"
+            android:background="@drawable/followrs_shae"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/light_white"
+            android:layout_marginRight="@dimen/dp10"
+            android:text="@string/follower"
+            android:visibility="gone"/>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llFollowing"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp30"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:paddingLeft="@dimen/dp6"
+            android:paddingRight="@dimen/dp6"
+            android:visibility="visible"
+            android:background="@drawable/following_shape"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/dp16"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_check_blue"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp5"
+                android:fontFamily="@font/segoe_regular"
+                android:textSize="@dimen/sp12"
+                android:textColor="@color/blue"
+                android:text="@string/following"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </RelativeLayout>
+   <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:layout_marginLeft="@dimen/dp0"
+        android:background="@color/gray"/>-->
+</androidx.appcompat.widget.LinearLayoutCompat>

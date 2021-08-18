@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llPollLayout"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginTop="@dimen/dp15">
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/oneSeekBar"
+                android:max="100"
+                android:progress="30"
+                android:thumb="@android:color/transparent"
+                android:progressDrawable="@drawable/custom_thumb" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp20"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvOne"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="One Text One"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/segoe_regular"
+                    android:gravity="center_vertical"
+                    tools:ignore="MissingConstraints"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPerOne"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/segoe_regular"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:layout_marginRight="@dimen/dp30"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/dp15"
+                android:text="15%"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginTop="@dimen/dp10">
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/twoSeekBar"
+                android:max="100"
+                android:progress="25"
+                android:thumb="@android:color/transparent"
+                android:progressDrawable="@drawable/custom_thumb" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp20"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/radioButtonTwo"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTwo"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="One Text One"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/segoe_regular"
+                    android:gravity="center_vertical"
+                    tools:ignore="MissingConstraints"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPerTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/segoe_regular"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:layout_marginRight="@dimen/dp30"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/dp15"
+                android:text="15%"/>
+
+        </RelativeLayout>
+
+    </RadioGroup>
+
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

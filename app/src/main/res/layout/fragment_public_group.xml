@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_white"
+    tools:context="com.forumias.beta.com.forumias.beta.ui.deta.forumias.group.PublicGroupFragment">
+   <include layout="@layout/login_info_layout"/>
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginBottom="@dimen/dp60"
+       android:layoutAnimation="@anim/layout_animation_up_to_down"
+       android:id="@+id/rvGroup"/>
+
+</RelativeLayout>

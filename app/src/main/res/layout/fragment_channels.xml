@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/rlChannelSection"
+    tools:context="com.forumias.beta.com.forumias.beta.ui.deta.forumias.group.GroupFragment">
+
+    <include layout="@layout/login_info_layout"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llChannelSection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp60"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Channels"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="@font/proximanova_bold"
+            android:textSize="22sp"
+            android:paddingLeft="@dimen/dp15"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="@dimen/dp145"
+            android:layout_height="@dimen/dp35"
+            android:text="Create Channels"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp10"
+            android:drawablePadding="@dimen/dp6"
+            android:drawableLeft="@drawable/ic_addgroup"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/proximanova_regular"
+            android:background="@drawable/group_shape"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/dp15"/>
+
+    </RelativeLayout>-->
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:animateLayoutChanges="true"
+        app:tabIndicatorColor="@color/blue"
+        app:tabIndicator="@drawable/tab_indicater"
+        app:tabSelectedTextColor="@color/blue"
+        app:tabTextColor="@color/gray_dark"
+        android:background="@color/white"
+        app:tabIndicatorHeight="4dp"
+        app:tabMaxWidth="0dp"
+        app:tabMode="scrollable"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp0"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

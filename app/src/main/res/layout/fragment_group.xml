@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llGroupSection"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_white"
+    android:orientation="vertical"
+    tools:context="com.forumias.beta.com.forumias.beta.ui.deta.forumias.group.GroupFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp60"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Groups"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/proximanova_bold"
+            android:textSize="22sp"
+            android:paddingLeft="@dimen/dp15"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="@dimen/dp135"
+            android:layout_height="@dimen/dp35"
+            android:text="Create Groups"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp10"
+            android:drawablePadding="@dimen/dp6"
+            android:drawableLeft="@drawable/ic_addgroup"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/proximanova_regular"
+            android:background="@drawable/group_shape"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp15"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/grediant_color"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        app:tabIndicatorColor="@color/gray_dark"
+        app:tabSelectedTextColor="@color/blue"
+        android:elevation="@dimen/dp6"
+        app:tabTextColor="@color/gray_dark"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+        />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp5"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

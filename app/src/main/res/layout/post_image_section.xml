@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible"
+    android:id="@+id/llPostImageSection">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivPostImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp220"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_back" />
+    <RelativeLayout
+        android:id="@+id/rlCathySection"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="@dimen/dp150">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCatchyName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="@dimen/sp10"
+            android:fontFamily="@font/proximanova_bold"
+            android:textSize="@dimen/sp16"
+            android:text="catchy_text"/>
+    </RelativeLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

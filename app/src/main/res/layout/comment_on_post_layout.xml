@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp3"
+    android:layout_marginBottom="@dimen/dp3"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/dp1"
+    android:backgroundTint="@color/white"
+    app:cardElevation="@dimen/dp0">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llCommentSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/post_border"
+        android:paddingLeft="@dimen/dp4"
+        android:paddingRight="@dimen/dp4"
+        android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5">
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentLeft="true"
+                    android:padding="@dimen/dp6">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivCommentUserImage"
+                        android:layout_width="@dimen/dp35"
+                        android:layout_height="@dimen/dp35"
+                        android:src="@drawable/user_placeholder" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvCommentUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/proximanova_bold"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dp15"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp12" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/proximanova_regular"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dp15"
+                        android:text="dfads"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/sp11" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+               <androidx.appcompat.widget.LinearLayoutCompat
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerInParent="true"
+                   android:orientation="horizontal">
+
+                   <androidx.appcompat.widget.AppCompatTextView
+                       android:id="@+id/tvDeletedPost"
+                       android:layout_width="wrap_content"
+                       android:layout_height="@dimen/dp25"
+                       android:layout_marginRight="@dimen/dp6"
+                       android:visibility="visible"
+                       android:gravity="center"
+                       android:textStyle="bold"
+                       android:textColor="@color/white"
+                       android:textSize="@dimen/sp12"
+                       android:paddingLeft="@dimen/dp10"
+                       android:paddingRight="@dimen/dp10"
+                       android:background="@drawable/deleted_shape"
+                       android:text="Deleted"/>
+
+                   <androidx.appcompat.widget.AppCompatImageView
+                       android:id="@+id/ivSaveComment"
+                       android:layout_width="wrap_content"
+                       android:layout_height="@dimen/dp25"
+                       android:layout_marginRight="@dimen/dp6"
+                       android:padding="@dimen/dp4"
+                       android:src="@drawable/ic_star" />
+
+               </androidx.appcompat.widget.LinearLayoutCompat>
+            </RelativeLayout>
+
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/webView"
+                android:layout_margin="@dimen/dp5"
+                android:visibility="gone"
+                tools:ignore="WebViewLayout" />
+        <com.ahmadnemati.clickablewebview.ClickableWebView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/clickable_webview"/>
+
+        <View
+            android:id="@+id/commentView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:layout_marginLeft="@dimen/dp6"
+            android:layout_marginRight="@dimen/dp6"
+            android:background="@color/low_gray"/>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llCommentBottom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_marginBottom="@dimen/dp5">
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/llUpVoteSection"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dp25"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:paddingRight="@dimen/dp5">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivUpVote"
+                            android:layout_width="@dimen/dp25"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:layout_marginBottom="@dimen/dp4"
+                            android:src="@drawable/ic_upvote_dark"
+                           />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvUpVoters"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="0"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/dp3"
+                                android:layout_marginTop="@dimen/dp2"
+                                android:fontFamily="@font/proximanova_regular"
+                                android:textColor="@color/gray_dark"
+                                android:textSize="@dimen/sp13"
+                                android:visibility="visible" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivQuoteOnComment"
+                            android:layout_width="@dimen/dp27"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/dp10"
+                            android:layout_marginLeft="@dimen/dp25"
+                            android:layout_marginTop="@dimen/dp2"
+                            android:layout_marginBottom="@dimen/dp2"
+                           />
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivReplyOnComment"
+                            android:layout_width="@dimen/dp23"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/dp2"
+                            android:layout_marginTop="@dimen/dp2"
+                            android:layout_marginLeft="@dimen/dp25"
+                           />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_alignParentRight="true">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivView"
+                            android:layout_width="@dimen/dp25"
+                            android:layout_height="@dimen/dp30"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ic_visibility"
+                            android:paddingRight="@dimen/dp3"
+                            android:paddingLeft="@dimen/dp4"
+                            android:gravity="center_vertical" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvViewCountSecond"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/proximanova_regular"
+                            android:gravity="center_vertical"
+                            android:text="0"
+                            android:layout_marginRight="@dimen/dp10"
+                            android:visibility="visible"
+                            android:textSize="@dimen/sp12"
+                            android:layout_marginTop="@dimen/dp4"
+                            android:textColor="@color/gray_dark_second" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivShare"
+                            android:layout_width="@dimen/dp30"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_share"
+                            android:layout_marginTop="@dimen/dp5"
+                             />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </RelativeLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="@color/gray" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_white"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llViewReplySection"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp30"
+                android:layout_marginLeft="@dimen/dp20"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp1"
+                    android:background="@color/colorPrimary" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvReplyCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/sp10"
+                    android:fontFamily="@font/proximanova_bold"
+                    android:padding="@dimen/dp5"
+                    android:text="View Reply(6)"
+                    android:textSize="@dimen/ds13" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                android:layout_marginBottom="@dimen/dp6"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</com.google.android.material.card.MaterialCardView>

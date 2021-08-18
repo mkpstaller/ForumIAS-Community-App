@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.forumias.beta.ui.deta.forumias.postGalleryImage.ChatUserFragment">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp20"
+        android:fontFamily="@font/segoe_regular"
+        android:drawablePadding="@dimen/dp15"
+        android:layout_margin="@dimen/dp10"
+        android:textColorHint="@color/blue"
+        android:focusable="true"
+        android:background="@drawable/new_search_edit_shape"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Under Development"
+        android:fontFamily="@font/segoe_bold"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

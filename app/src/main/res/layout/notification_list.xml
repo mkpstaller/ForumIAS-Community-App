@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/dp0"
+    android:paddingTop="@dimen/dp3"
+    android:paddingBottom="@dimen/dp3"
+    android:id="@+id/llNotificationList"
+    android:outlineSpotShadowColor="@color/blue">
+
+   <androidx.appcompat.widget.LinearLayoutCompat
+       android:id="@+id/llNotificationSection"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/notification_shape_blue"
+       android:paddingTop="@dimen/dp6"
+       android:paddingBottom="@dimen/dp6"
+       android:orientation="vertical">
+
+       <androidx.appcompat.widget.LinearLayoutCompat
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:weightSum="2"
+           android:padding="@dimen/dp5"
+           android:orientation="horizontal">
+           <RelativeLayout
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight=".3">
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:layout_width="@dimen/dp11"
+                   android:layout_height="@dimen/dp11"
+                   android:layout_marginLeft="@dimen/dp3"
+                   android:visibility="gone"
+                   android:src="@drawable/circle_shape"/>
+               <de.hdodenhof.circleimageview.CircleImageView
+                   android:id="@+id/ivUserImage"
+                   android:layout_width="@dimen/dp35"
+                   android:layout_height="@dimen/dp35"
+                   android:layout_centerInParent="true"
+                   android:src="@drawable/user_placeholder"/>
+
+           </RelativeLayout>
+
+           <androidx.appcompat.widget.LinearLayoutCompat
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_weight="1.7">
+
+               <androidx.appcompat.widget.LinearLayoutCompat
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:orientation="horizontal">
+                   <androidx.appcompat.widget.AppCompatTextView
+                       android:id="@+id/tvName"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/segoe_bold"
+                       android:textColor="@color/black"
+                       android:textSize="@dimen/sp11"
+                       android:text=""/>
+                   <androidx.appcompat.widget.AppCompatTextView
+                       android:id="@+id/tvNameInfo"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/proximanova_regular"
+                       android:textColor="@color/gray_dark"
+                       android:textSize="@dimen/sp11"
+                       android:paddingLeft="@dimen/dp3"
+                       android:text=""/>
+               </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:id="@+id/tvTitle"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/segoe_bold"
+                   android:textColor="@color/dark_black"
+                   android:layout_marginTop="@dimen/dp3"
+                   android:textSize="@dimen/sp13"
+                   android:text=""/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15 hour(s) ago"
+                    android:fontFamily="@font/segoe_regular"
+                    android:textSize="@dimen/sp11"
+                    android:textColor="@color/gray_dark"
+                    android:layout_marginTop="@dimen/dp3"/>
+           </androidx.appcompat.widget.LinearLayoutCompat>
+       </androidx.appcompat.widget.LinearLayoutCompat>
+   </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

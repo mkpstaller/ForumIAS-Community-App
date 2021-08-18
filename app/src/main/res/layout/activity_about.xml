@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.forumias.beta.ui.deta.forumias.AboutActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp55"
+        android:orientation="horizontal"
+        android:background="#7D1192">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp3"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_back_key_white"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="About ForumIAS Academy"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/proximanova_bold"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp30"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="@dimen/dp25"
+            android:layout_height="@dimen/dp25"
+            android:text="#"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/green_circle"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:layout_marginLeft="@dimen/dp6"
+            android:textColor="@color/black"
+            android:fontFamily="@font/proximanova_bold"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dp3"
+        android:layout_margin="@dimen/dp10"
+        app:strokeWidth="@dimen/dp1"
+        app:strokeColor="@color/gray">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/post_border"
+            android:paddingTop="@dimen/dp15"
+            android:paddingBottom="@dimen/sp15"
+            android:paddingRight="@dimen/dp5"
+            android:paddingLeft="@dimen/dp5"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proximanova_regular"
+                android:textColor="@color/black"
+                android:padding="@dimen/dp8"
+                android:textSize="@dimen/sp16"
+                android:text="ForumIAS.com is India’s most popular platform for Civil Services Examination &amp; Indian Forest Service Examination preparation.
+
+\n\nForumIAS was founded in 2012, in a small room in New Delhi for the internal use of its ‘inmates’.
+
+\n\nThose inmates today serve at various levels in the government, private sector and at ForumIAS.
+
+\n\nMore than 3500+ ForumIAS Members today serve in India and her missions abroad."/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@color/gray_dark"
+        android:layout_marginTop="@dimen/dp50"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/proximanova_regular"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp15"
+            android:gravity="center"
+            android:text="© 2018 ForumIAS. All rights reserved"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAppVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/proximanova_regular"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp40"
+        android:text="App Version 1.0"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

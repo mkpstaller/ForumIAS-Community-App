@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivChannelImage"
+        android:layout_width="@dimen/dp70"
+        android:layout_height="@dimen/dp70"
+        android:src="@drawable/user_placeholder"
+        android:paddingLeft="@dimen/dp6"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/dp6"
+        android:layout_gravity="center"/>
+
+    <com.forumias.beta.utility.CircularTextView
+        android:id="@+id/tvChannelFirstText"
+        android:layout_width="@dimen/dp70"
+        android:layout_height="@dimen/dp70"
+        android:layout_gravity="center"
+        android:text="T"
+        android:layout_marginTop="@dimen/dp6"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:fontFamily="@font/proximanova_bold"
+        android:textSize="20sp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

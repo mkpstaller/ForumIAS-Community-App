@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/llLayout"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dp5"
+        android:padding="@dimen/dp10"
+        android:visibility="visible"
+        android:src="@drawable/ic_close"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginBottom="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp30">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvCreateAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Create Account"
+                        android:textColor="@color/dark_black"
+                        android:fontFamily="@font/segoe_bold"
+                        android:textSize="@dimen/dp35" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:layout_alignParentStart="true"
+                            android:text="Sign up "
+                            android:textColor="@color/blue"
+                            android:fontFamily="@font/segoe_bold"
+                            android:textSize="@dimen/sp20" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/togetStarted"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:layout_alignParentStart="true"
+                            android:text="to get started."
+                            android:textColor="@color/dark_black"
+                            android:fontFamily="@font/segoe_bold"
+                            android:textSize="@dimen/sp20" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp40"
+                    android:orientation="vertical">
+
+
+
+              <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:hint="@string/hint_mobile"
+                        app:counterEnabled="true"
+                        app:boxStrokeColor="@color/text_input_color"
+                        app:boxStrokeWidth="@dimen/dp1"
+                        app:hintTextColor="@color/gray_dark"
+                        android:textColorHint="@color/gray_dark"
+                        app:counterMaxLength="10"
+                  android:id="@+id/tilMobileNumber">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editMobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:textCursorDrawable="@drawable/edit_cursor"
+                            android:maxLength="10"
+                            android:fontFamily="@font/segoe_regular"
+                            android:inputType="numberDecimal" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvMessageForDublicate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe_regular"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/sp12"
+                        android:layout_marginTop="@dimen/dp3"
+                        android:layout_marginBottom="@dimen/dp3"
+                        android:visibility="gone"
+                        android:text="Already Taken, try other mobile number"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        app:boxStrokeColor="@color/text_input_color"
+                        app:boxStrokeWidth="@dimen/dp1"
+                        app:hintTextColor="@color/gray_dark"
+                        android:textColorHint="@color/gray_dark"
+                        android:hint="@string/email"
+                        android:id="@+id/tilEmail">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textEmailAddress"
+                            android:fontFamily="@font/segoe_regular"
+                            android:textCursorDrawable="@drawable/edit_cursor"
+                            android:lines="1"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvMessageForDublicateEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe_regular"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/sp12"
+                        android:layout_marginTop="@dimen/dp3"
+                        android:layout_marginBottom="@dimen/dp3"
+                        android:visibility="gone"
+                        android:text="Already Taken, try other email.!"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tilFullName"
+                        android:layout_marginTop="@dimen/dp10"
+                        app:boxStrokeColor="@color/text_input_color"
+                        app:boxStrokeWidth="@dimen/dp1"
+                        app:hintTextColor="@color/gray_dark"
+                        android:textColorHint="@color/gray_dark"
+                        android:hint="@string/full_name">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editFullName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:fontFamily="@font/segoe_regular"
+                            android:textCursorDrawable="@drawable/edit_cursor"
+                            android:lines="1"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tilDisplayName"
+                        android:layout_marginTop="@dimen/dp10"
+                        app:boxStrokeColor="@color/text_input_color"
+                        app:boxStrokeWidth="@dimen/dp1"
+                        app:hintTextColor="@color/gray_dark"
+                        android:textColorHint="@color/gray_dark"
+                        android:hint="@string/display_name">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editDisplayName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:fontFamily="@font/segoe_regular"
+                            android:textCursorDrawable="@drawable/edit_cursor"
+                            android:lines="1"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvMessageForDublicateName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/segoe_regular"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/sp12"
+                        android:layout_marginTop="@dimen/dp3"
+                        android:layout_marginBottom="@dimen/dp3"
+                        android:visibility="gone"
+                        android:text="Already Taken, try other display name.!"/>
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnRegister"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp60"
+                        android:layout_marginTop="@dimen/dp30"
+                        android:backgroundTint="@color/blue"
+                        android:gravity="center"
+                        android:hint="@string/sign_up"
+                        android:textSize="@dimen/sp18"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp80"
+                    android:gravity="center">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvNewUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:layout_alignParentStart="true"
+                        android:text="Already have an account?"
+                        android:textColor="@color/dark_black"
+                        android:fontFamily="@font/segoe_regular"
+                        android:textSize="@dimen/sp18" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvLoginPage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:layout_alignParentStart="true"
+                        android:text=" Sign In"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/segoe_bold"
+                        android:textSize="@dimen/sp18" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+    </RelativeLayout>
+
+
+
+
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llTermsCondition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="@dimen/dp5"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvByCreated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="By creating an account, you agree to our "
+            android:textColor="@color/dark_black"
+            android:fontFamily="@font/proximanova_regular"
+            android:textSize="@dimen/sp12" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=" terms and conditions"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/proximanova_regular"
+            android:textSize="@dimen/sp12" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

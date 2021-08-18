@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/dp6"
+    android:elevation="@dimen/dp6"
+    android:layout_margin="@dimen/dp6">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send_invite_title"
+            android:textSize="@dimen/sp20"
+            android:textColor="@color/dark_black"
+            android:padding="@dimen/dp6"
+            android:gravity="center"
+            android:background="@color/light_white"
+            android:fontFamily="@font/proximanova_bold"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_dark"
+            android:fontFamily="@font/proximanova_regular"
+            android:textSize="@dimen/sp13"
+            android:layout_marginTop="@dimen/dp10"
+            android:gravity="center"
+            android:padding="@dimen/dp6"
+            android:text="@string/hint_title"/>
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:hint="@string/enter_email"
+            android:paddingLeft="@dimen/dp10"
+            android:fontFamily="@font/proximanova_regular"
+            android:textSize="@dimen/sp15"
+            android:layout_marginTop="@dimen/dp6"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:background="@drawable/login_edit_shape"/>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp15"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/dp10"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp35"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="OK"
+                android:background="@drawable/button_shape"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="@dimen/dp60"
+                android:layout_height="@dimen/dp35"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="Close"
+                android:layout_marginLeft="@dimen/dp10"
+                android:background="@drawable/button_red_shape"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/llSearchLayout"
+    android:background="@color/back_color"
+    tools:context="com.forumias.beta.com.forumias.beta.ui.deta.SearchPostActivity">
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp20"
+        android:fontFamily="@font/segoe_regular"
+        android:drawablePadding="@dimen/dp15"
+        android:layout_margin="@dimen/dp10"
+        android:textColorHint="@color/blue"
+        android:focusable="true"
+        android:background="@drawable/new_search_edit_shape"/>
+
+<!--<androidx.appcompat.widget.AppCompatEditText
+    android:id="@+id/editSearch"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp45"
+    android:drawableLeft="@drawable/ic_search_blue"
+    android:paddingLeft="@dimen/dp20"
+    android:hint="@string/search"
+    android:fontFamily="@font/segoe_regular"
+    android:drawablePadding="@dimen/dp15"
+    android:layout_margin="@dimen/dp10"
+    android:textColorHint="@color/blue"
+    android:background="@drawable/new_search_edit_shape"
+ />-->
+</androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/searchIconAnim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp130"
+        android:visibility="visible"
+        android:src="@drawable/search"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPostSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/dp5"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/dp60"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

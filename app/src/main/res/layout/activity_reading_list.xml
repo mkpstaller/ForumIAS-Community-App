@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_color"
+    android:orientation="vertical"
+    android:id="@+id/llReadingListSection"
+    tools:context="com.forumias.beta.ui.deta.ReadingListActivity">
+    <include layout="@layout/custom_toolbar_new"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+       <!-- <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_back_key"
+            android:padding="@dimen/dp5"/>-->
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/segoe_bold"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="Reading List"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp17" />
+    </RelativeLayout>
+  <androidx.appcompat.widget.LinearLayoutCompat
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+          <RelativeLayout
+              android:id="@+id/rlTrashSection"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/dp70"
+              android:visibility="gone"
+              android:background="@color/white">
+
+              <androidx.appcompat.widget.LinearLayoutCompat
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:gravity="center_vertical"
+                  android:layout_marginLeft="@dimen/dp5"
+                  android:orientation="horizontal">
+                  <com.google.android.material.checkbox.MaterialCheckBox
+                      android:id="@+id/chBoxSelectAll"
+                      android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:fontFamily="@font/segoe_regular"
+                      android:text="@string/select_all"/>
+
+                  <androidx.appcompat.widget.AppCompatImageView
+                      android:id="@+id/tvReadMenu"
+                      android:layout_width="@dimen/dp55"
+                      android:layout_height="@dimen/dp50"
+                      android:layout_marginLeft="@dimen/dp15"
+                      android:src="@drawable/ic_arrow_drop"/>
+              </androidx.appcompat.widget.LinearLayoutCompat>
+
+              <androidx.appcompat.widget.AppCompatTextView
+                  android:id="@+id/tvTrash"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:drawableLeft="@drawable/ic_trace"
+                  android:layout_alignParentRight="true"
+                  android:gravity="center_vertical"
+                  android:fontFamily="@font/segoe_regular"
+                  android:textColor="@color/black_light"
+                  android:layout_marginRight="@dimen/dp10"
+                  android:drawablePadding="@dimen/dp10"
+                  android:text="@string/trash"/>
+          </RelativeLayout>
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/recyclerView"
+          android:layout_marginTop="@dimen/dp6"
+          app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+  </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

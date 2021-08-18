@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llPollLayout"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/oneSeekBar"
+            android:max="100"
+            android:progress="25"
+            android:thumb="@android:color/transparent"
+            android:progressDrawable="@drawable/seekbar_progress" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvOne"
+            android:layout_marginLeft="@dimen/dp30"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="One Text One"
+            android:textColor="@color/black"
+            android:fontFamily="@font/segoe_regular"
+            android:gravity="center_vertical"
+            tools:ignore="MissingConstraints"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

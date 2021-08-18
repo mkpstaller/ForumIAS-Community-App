@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chatcover"
+    android:orientation="vertical">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp6"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50"
+                android:src="@drawable/user_profile"/>
+           <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/you_shape"
+                android:padding="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp15"
+                android:text="hello how are you?"
+                android:textSize="@dimen/ds13" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp60"
+            android:layout_marginRight="@dimen/dp15"
+            android:background="@drawable/i_shape"
+            android:padding="@dimen/dp10"
+            android:text="Hello i am fine, and you.??"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ds13" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/dp5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_marginBottom="@dimen/dp5"
+                android:layout_weight="1.6"
+                android:background="@drawable/chat_edit_shape"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp15"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:hint="Type a message"
+                    android:inputType="textMultiLine"
+                    android:lines="5"
+                    android:maxLines="5"
+                    android:minLines="2"
+                    android:padding="@dimen/dp3"
+                    android:paddingLeft="@dimen/dp17"
+                    android:paddingRight="@dimen/dp17"
+                    android:scrollbars="vertical" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp55"
+                android:layout_weight=".4">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/dp55"
+                    android:layout_height="@dimen/dp55"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circle_shape"
+                    android:padding="@dimen/dp10"
+                    android:src="@drawable/ic_send">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

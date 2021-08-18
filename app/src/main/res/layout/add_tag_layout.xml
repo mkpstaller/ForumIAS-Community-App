@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/dp6"
+    android:elevation="@dimen/dp6">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:background="@color/blue">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/proximanova_regular"
+                android:textColor="@color/white"
+                android:text="Add Tag"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivClose"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp10"
+                android:src="@drawable/ic_close"/>
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_light"
+            android:fontFamily="@font/proximanova_bold"
+            android:textSize="@dimen/sp17"
+            android:padding="@dimen/dp6"
+            android:gravity="center"
+            android:text="@string/dummy_test"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="@dimen/dp300"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp10"
+            android:hint="Enter tag by camma separated">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddTag"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="@dimen/dp50"
+            android:text="@string/add"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/proximanova_regular"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp15"
+            app:rippleColor="@color/gray_dark"
+            app:cornerRadius="@dimen/dp6"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</com.google.android.material.card.MaterialCardView>

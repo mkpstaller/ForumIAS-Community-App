@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:id="@+id/llToolbarSection"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="@dimen/dp50"
+    android:elevation="@dimen/dp5"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/dp35"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp5"
+            android:src="@drawable/ic_back_key"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivAppLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp10"
+            android:src="@drawable/logo_black"/>
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

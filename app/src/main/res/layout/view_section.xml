@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="end"
+    android:visibility="gone"
+    android:id="@+id/llViewSection">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvViewCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:padding="@dimen/sp10"
+        android:drawablePadding="@dimen/sp10"
+        android:layout_marginRight="@dimen/dp15"
+        android:drawableLeft="@drawable/ic_visibility"
+        android:text="1 Views"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

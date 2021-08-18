@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.forumias.beta.ui.deta.forumias.ReportDailogFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp45"
+            android:background="@color/low_gray">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivClose"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp10"
+                android:src="@drawable/ic_close_blue"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp45"
+                android:gravity="center"
+                android:fontFamily="@font/segoe_bold"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true"
+                android:text="@string/report" />
+
+
+
+        </RelativeLayout>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp10"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:padding="@dimen/dp10"
+                android:fontFamily="@font/segoe_regular"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="Help us understand the problem. What is going on with this post?"/>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rdOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp8"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/segoe_regular"
+                    android:checked="true"
+                    android:text="It's spam"/>
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rdTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp8"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/segoe_regular"
+                    android:text="It's abusive"/>
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rdThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp8"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/segoe_regular"
+                    android:text="I am not interested"/>
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rdFour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp8"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/segoe_regular"
+                    android:text="This should not be on ForumIAS"/>
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/rdFive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp8"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/segoe_regular"
+                    android:text="Other"/>
+            </RadioGroup>
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editOtherReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="4"
+                android:maxLines="6"
+                android:gravity="top|left"
+                android:fontFamily="@font/segoe_regular"
+                android:textColor="@color/black"
+                android:padding="@dimen/dp7"
+                android:textSize="@dimen/sp14"
+                android:visibility="gone"
+                android:hint="Describe your reason, if other"
+                android:background="@drawable/edit_shape"
+                android:layout_marginTop="@dimen/dp20"/>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp60"
+                android:layout_marginTop="@dimen/dp30"
+                android:layout_marginBottom="@dimen/dp15"
+                android:gravity="center">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvSubmit"
+                    android:layout_width="@dimen/dp200"
+                    android:layout_height="@dimen/dp45"
+                    android:gravity="center"
+                    android:fontFamily="@font/segoe_bold"
+                    android:textColor="@color/white"
+                    android:background="@drawable/followrs_shae"
+                    android:text="Submit" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</FrameLayout>

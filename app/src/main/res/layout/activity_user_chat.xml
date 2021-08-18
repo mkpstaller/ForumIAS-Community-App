@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_color"
+    android:id="@+id/llChatHome"
+    tools:context="com.forumias.beta.ui.deta.forumias_chat.ui.UserChatActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp55"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="@dimen/dp35"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/dp3"
+                    android:src="@drawable/ic_back_key"/>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="match_parent">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/dp35"
+                        android:layout_height="@dimen/dp35"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:src="@drawable/user_profile"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/dp10"
+                        android:layout_height="@dimen/dp10"
+                        android:layout_marginTop="@dimen/dp35"
+                        android:layout_marginLeft="@dimen/dp33"
+                        android:src="@drawable/green_circle_shape"/>
+                </RelativeLayout>
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Musafir"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/segoe_bold"
+                        android:textSize="@dimen/sp13" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvActiveStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Active Now"
+                        android:fontFamily="@font/segoe_regular"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/sp11" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llChatSection"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="@dimen/dp50"
+            android:layout_weight=".8"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginBottom="@dimen/dp5"
+            android:layout_marginLeft="@dimen/dp10"
+            android:background="@drawable/chat_edit_shape">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editChatMessage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/segoe_regular"
+                android:textSize="@dimen/sp15"
+                android:background="@null"
+                android:paddingLeft="@dimen/dp10"
+                android:textColorHint="@color/gray_dark"
+                android:hint="Message..."/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight=".2">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/dp45"
+                android:layout_height="@dimen/dp45"
+                android:src="@drawable/ic_send_chat"
+                android:padding="@dimen/sp13"
+                android:background="@drawable/blue_circle_shape"
+                android:layout_gravity="center_vertical" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

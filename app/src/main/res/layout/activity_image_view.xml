@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.forumias.beta.ui.deta.forumias.ImageViewActivity">
+
+    <include layout="@layout/custom_toolbar_new"/>
+       <!-- <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/dp220"
+                android:layout_height="match_parent"
+                android:src="@drawable/logo_black"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp10"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivCloseBack"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_back_key"
+                android:padding="@dimen/dp6"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"/>
+
+        </RelativeLayout>-->
+      <!--  <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView"
+                    android:src="@drawable/placeholder_back"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>-->
+
+    <!--<androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:scaleType="centerInside"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dp55"
+        android:layout_marginBottom="@dimen/dp55"
+        android:src="@drawable/placeholder_back"/>-->
+
+   <!-- <ozaydin.serkan.com.image_zoom_view.ImageViewZoom
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/placeholder_back" />-->
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentBottom="true">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivDownload"
+                android:layout_width="@dimen/dp30"
+                android:layout_height="@dimen/dp30"
+                android:src="@drawable/ic_file_download"
+                android:padding="@dimen/dp3"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_margin="@dimen/dp10" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivShare"
+                android:layout_width="@dimen/dp30"
+                android:layout_height="@dimen/dp30"
+                android:src="@drawable/ic_share"
+                android:padding="@dimen/dp3"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_margin="@dimen/dp10" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.forumias.beta">
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity android:name=".ui.deta.forumias.comment.ui.PollActivity"></activity>
+        <activity android:name=".ui.deta.forumias.deep_link.DeepLinkActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="forumias.com"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="forumias.com"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.deta.forumias.message.view.UserChatPage" />
+        <activity android:name=".ui.deta.forumias.message.view.UserMessageHomePage" />
+        <activity android:name=".ui.deta.forumias.postGalleryImage.ShareImageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.deta.forumias_chat.ui.UserChatActivity" />
+        <activity android:name=".ui.deta.forumias.ImageViewActivity" />
+        <activity android:name=".ui.deta.forumias.user.user_profile_and_post.UserAllCommentActivity" />
+        <activity android:name=".ui.deta.forumias.setting.InviteFriendActivity" />
+        <activity android:name=".ui.deta.forumias.setting.SettingActivityActivity" />
+        <activity
+            android:name=".ui.deta.forumias_chat.ui.ChatMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.deta.forumias.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.deta.forumias.working_us.WebViewActivity" />
+        <activity
+            android:name=".ui.deta.forumias.save_comment.SaveCommentDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.deta.forumias.save_comment.SaveCommentListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.deta.forumias.CreateCommentOnPostActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.deta.forumias.academy.CreateOnlyAcadmyPost"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.deta.forumias.reply_quote.ReplyQuoteOnCommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.deta.forumias.channel.channel_post.ChannelPostDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.deta.forumias.page.PagePostCommentActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.deta.forumias.academy.AcademyActivity" />
+        <activity android:name=".ui.deta.MyFollowDataActivity" /> <!-- WelcomeHomeActivity -->
+        <!--
+<activity
+            android:name="com.forumias.messenger"
+            android:label="@string/app_name" >
+
+            <intent-filter>
+                <action android:name="com.forumias.messenger.ui.HomeMessengerActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity
+            android:name=".ui.deta.forumias.splash.BetaSplashActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+ <activity
+            android:name=".ui.deta.WelcomeHomeActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        -->
+        <activity
+            android:name=".ui.deta.WelcomeHomeActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustPan">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            -->
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".ui.deta.forumias.profile.UserProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.messanger.HomeChatActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".ui.messanger.ChatActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".ui.messanger.FinalGroupActivity"
+            android:label="@string/create_group"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".ui.messanger.AllFriendListActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".ui.messanger.GroupActivity"
+            android:label="@string/new_groups"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.messanger.CreateChanelActivity"
+            android:label="@string/create_new_chanel"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name=".ui.deta.ReadingListActivity" />
+        <activity android:name=".ui.deta.forumias.channel.MyChannelPostActivity" /> <!-- <activity android:name=".ui.deta.forumias.notification.NotificationActivity" /> -->
+        <activity android:name=".ui.deta.forumias.page.MyPagesPostActivity" />
+        <activity android:name=".ui.deta.forumias.group.GroupPostHomeActivity" />
+        <activity android:name=".ui.deta.forumias.user.user_profile_and_post.UserProfileAndPostActivity" />
+        <activity android:name=".ui.deta.forumias.create_story.CreateStoryOrQuestionActivity" />
+        <activity
+            android:name=".ui.deta.SearchPostActivity"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".ui.deta.forumias.comment.ui.CommentOnPostDetailsActivity" />
+        <activity android:name=".ui.deta.forumias.group.GroupsDetailsActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+
+        <receiver
+            android:name=".reciver.SmsReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

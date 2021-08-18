@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/back_color"
+    android:orientation="vertical"
+    android:id="@+id/llPostSection"
+    tools:context="com.forumias.beta.ui.deta.forumias.profile.MyPostFragment">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="visible"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNoDataFound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/nothing_show"
+        android:fontFamily="@font/segoe_bold"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+       android:id="@+id/recyclerView"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
